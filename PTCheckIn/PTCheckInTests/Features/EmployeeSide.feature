@@ -136,13 +136,13 @@ Scenario Outline: 編輯支援BU成功
 	And 我按下登入按鈕
 	And 我按下名為關於我的連結
 	And 我填寫員工資料
-		| 支援BU | 支援專案Leader | 支援專案名稱    | 星期一出席    | 星期二出席    | 星期三出席       | 星期四出席     | 星期五出席   |
-		| <BU> | <leader>       | <projectName> | <MondayAtt> | <TuesdayAtt> | <WednesdayAtt> | <TursdayAtt> | <FridayAtt> |
+		| 支援BU | 支援專案Leader | 支援專案名稱    |
+		| <BU> | <leader>       | <projectName> |
 	When 我按下修改按鈕
 	Then 應該出現修改成功視窗
 	Examples: 
-		| BU							  | leader     | projectName | MondayAtt | TuesdayAtt | WednesdayAtt | TursdayAtt | FridayAtt |
-		| QAC                 _品質保證中心 | DAVID_CHOU | autoTesting | ""        | 全天         | ""           | 全天         | 上半天       |
+		| BU							  | leader     | projectName |
+		| QAC                 _品質保證中心 | DAVID_CHOU | autoTesting |
 
 Scenario Outline: 編輯支援BU資料確認
 	Given 我前往登入畫面
@@ -151,18 +151,18 @@ Scenario Outline: 編輯支援BU資料確認
 	And 我按下登入按鈕
 	And 我按下名為關於我的連結
 	And 我填寫員工資料
-		| 支援BU | 支援專案Leader | 支援專案名稱    | 星期一出席    | 星期二出席    | 星期三出席       | 星期四出席     | 星期五出席   |
-		| <BU> | <leader>       | <projectName> | <MondayAtt> | <TuesdayAtt> | <WednesdayAtt> | <TursdayAtt> | <FridayAtt> |
+		| 支援BU | 支援專案Leader | 支援專案名稱    |
+		| <BU> | <leader>       | <projectName> |
 	And 我按下修改按鈕
 	And 我按下OK按鈕
 	And 我按下名為首頁的連結
 	And 我按下名為關於我的連結
 	Then 關於我內的資料應該為
-		| 支援BU | 支援專案Leader | 支援專案名稱    | 星期一出席    | 星期二出席    | 星期三出席       | 星期四出席     | 星期五出席   |
-		| <BU> | <leader>       | <projectName> | <MondayAtt> | <TuesdayAtt> | <WednesdayAtt> | <TursdayAtt> | <FridayAtt> |
+		| 支援BU | 支援專案Leader | 支援專案名稱    |
+		| <BU> | <leader>       | <projectName> |
 	Examples: 
-		| BU							  | leader     | projectName | MondayAtt | TuesdayAtt | WednesdayAtt | TursdayAtt | FridayAtt |
-		| QAC                 _品質保證中心 | DAVID_CHOU | autoTesting | ""        | 全天         | ""           | 全天         | 上半天       |
+		| BU							  | leader     | projectName |
+		| QAC                 _品質保證中心 | DAVID_CHOU | autoTesting |
 
 
 

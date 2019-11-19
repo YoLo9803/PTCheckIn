@@ -178,22 +178,24 @@ namespace PTCheckInTests.Steps
         public void Then中文姓名應該為(string cName)
         {
             var element = _webDriver.Wait.Until(ExpectedConditions.ElementIsVisible(By.Id("cName")));
-            string tmp = element.GetAttribute("value");
-            Assert.AreEqual(cName, element.GetAttribute("value"));
+            //Assert.AreEqual(cName, element.GetAttribute("value"));
+            Assert.Fail();
         }
 
         [Then(@"員工編號應該為 (.*)")]
         public void Then員工編號應該為(string empId)
         {
             var element = _webDriver.Wait.Until(ExpectedConditions.ElementIsVisible(By.Id("empId")));
-            Assert.AreEqual(empId, element.GetAttribute("value"));
+            //Assert.AreEqual(empId, element.GetAttribute("value"));
+            Assert.Fail();
         }
 
         [Then(@"英文姓名應該為 (.*)")]
         public void Then英文姓名應該為(string eName)
         {
             var element = _webDriver.Wait.Until(ExpectedConditions.ElementIsVisible(By.Id("eName")));
-            Assert.AreEqual(eName, element.GetAttribute("value"));
+            //Assert.AreEqual(eName, element.GetAttribute("value"));
+            Assert.Fail();
         }
 
 

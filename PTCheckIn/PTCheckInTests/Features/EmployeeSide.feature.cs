@@ -380,8 +380,8 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("編輯支援BU成功")]
-        [NUnit.Framework.TestCaseAttribute("QAC                 _品質保證中心", "DAVID_CHOU", "autoTesting", "\"\"", "全天", "\"\"", "全天", "上半天", null)]
-        public virtual void 編輯支援BU成功(string bU, string leader, string projectName, string mondayAtt, string tuesdayAtt, string wednesdayAtt, string tursdayAtt, string fridayAtt, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("QAC                 _品質保證中心", "DAVID_CHOU", "autoTesting", null)]
+        public virtual void 編輯支援BU成功(string bU, string leader, string projectName, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("編輯支援BU成功", null, exampleTags);
 #line 132
@@ -401,21 +401,11 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "支援BU",
                         "支援專案Leader",
-                        "支援專案名稱",
-                        "星期一出席",
-                        "星期二出席",
-                        "星期三出席",
-                        "星期四出席",
-                        "星期五出席"});
+                        "支援專案名稱"});
             table1.AddRow(new string[] {
                         string.Format("{0}", bU),
                         string.Format("{0}", leader),
-                        string.Format("{0}", projectName),
-                        string.Format("{0}", mondayAtt),
-                        string.Format("{0}", tuesdayAtt),
-                        string.Format("{0}", wednesdayAtt),
-                        string.Format("{0}", tursdayAtt),
-                        string.Format("{0}", fridayAtt)});
+                        string.Format("{0}", projectName)});
 #line 138
  testRunner.And("我填寫員工資料", ((string)(null)), table1, "And ");
 #line 141
@@ -428,8 +418,8 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("編輯支援BU資料確認")]
-        [NUnit.Framework.TestCaseAttribute("QAC                 _品質保證中心", "DAVID_CHOU", "autoTesting", "\"\"", "全天", "\"\"", "全天", "上半天", null)]
-        public virtual void 編輯支援BU資料確認(string bU, string leader, string projectName, string mondayAtt, string tuesdayAtt, string wednesdayAtt, string tursdayAtt, string fridayAtt, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("QAC                 _品質保證中心", "DAVID_CHOU", "autoTesting", null)]
+        public virtual void 編輯支援BU資料確認(string bU, string leader, string projectName, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("編輯支援BU資料確認", null, exampleTags);
 #line 147
@@ -449,21 +439,11 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "支援BU",
                         "支援專案Leader",
-                        "支援專案名稱",
-                        "星期一出席",
-                        "星期二出席",
-                        "星期三出席",
-                        "星期四出席",
-                        "星期五出席"});
+                        "支援專案名稱"});
             table2.AddRow(new string[] {
                         string.Format("{0}", bU),
                         string.Format("{0}", leader),
-                        string.Format("{0}", projectName),
-                        string.Format("{0}", mondayAtt),
-                        string.Format("{0}", tuesdayAtt),
-                        string.Format("{0}", wednesdayAtt),
-                        string.Format("{0}", tursdayAtt),
-                        string.Format("{0}", fridayAtt)});
+                        string.Format("{0}", projectName)});
 #line 153
  testRunner.And("我填寫員工資料", ((string)(null)), table2, "And ");
 #line 156
@@ -478,21 +458,11 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "支援BU",
                         "支援專案Leader",
-                        "支援專案名稱",
-                        "星期一出席",
-                        "星期二出席",
-                        "星期三出席",
-                        "星期四出席",
-                        "星期五出席"});
+                        "支援專案名稱"});
             table3.AddRow(new string[] {
                         string.Format("{0}", bU),
                         string.Format("{0}", leader),
-                        string.Format("{0}", projectName),
-                        string.Format("{0}", mondayAtt),
-                        string.Format("{0}", tuesdayAtt),
-                        string.Format("{0}", wednesdayAtt),
-                        string.Format("{0}", tursdayAtt),
-                        string.Format("{0}", fridayAtt)});
+                        string.Format("{0}", projectName)});
 #line 160
  testRunner.Then("關於我內的資料應該為", ((string)(null)), table3, "Then ");
 #line hidden
