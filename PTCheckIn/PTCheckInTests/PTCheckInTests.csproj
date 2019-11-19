@@ -101,7 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PTCheckInTests.CommonTools\PTCheckInTests.CommonTools.csproj">
-      <Project>{04DBCAE8-3915-42D6-9E69-9DBA464096BD}</Project>
+      <Project>{460b3081-e1ea-4e62-b945-574864882d5b}</Project>
       <Name>PTCheckInTests.CommonTools</Name>
     </ProjectReference>
   </ItemGroup>

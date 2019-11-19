@@ -42,7 +42,7 @@ namespace PTCheckInTests.CommonTools
         //TODO: 多瀏覽器測試待寫
         private IWebDriver GetWebDriver()
         {
-            //switch (Environment.GetEnvironmentVariable("Test_Browser"))
+            //TODO: 目前僅實作Chrome瀏覽器
             switch ("Chrome")
             {
                 case "IE":
