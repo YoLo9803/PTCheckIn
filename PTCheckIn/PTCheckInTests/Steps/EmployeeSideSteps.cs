@@ -1,16 +1,14 @@
 ﻿using OpenQA.Selenium;
-//using OpenQA.Selenium.Support.UI;
 using PTCheckInTests.CommonTools;
 using System;
 using TechTalk.SpecFlow;
 using NUnit.Framework;
-using System.Collections.Generic;
 using System.Linq;
 using SeleniumExtras.WaitHelpers;
 using OpenQA.Selenium.Interactions;
-using System.Threading;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace PTCheckInTests.Steps
 {
@@ -20,6 +18,8 @@ namespace PTCheckInTests.Steps
         static readonly HttpClient _httpClient = new HttpClient();
 
         private readonly WebDriver _webDriver;
+
+        public string SeleniumBaseUrl => ConfigurationManager.AppSettings["seleniumBaseUrl"];
 
         public EmployeeSideSteps()
         {
@@ -95,7 +95,7 @@ namespace PTCheckInTests.Steps
         [Then(@"首頁時鐘的簽到時間應該為現在的伺服器時間")]
         public async Task Then首頁時鐘的簽到時間應該為現在的伺服器時間()
         {
-            HttpResponseMessage response = await _httpClient.GetAsync("https://assistant.gss.com.tw/PTCheckinFront/login.aspx");
+            HttpResponseMessage response = await _httpClient.GetAsync(SeleniumBaseUrl);
             //Server時間
             DateTime now = DateTime.Parse(response.Headers.GetValues("Date").First());
             string hour = now.Hour < 10 ? "0" + now.Hour.ToString() : now.Hour.ToString();
@@ -110,7 +110,7 @@ namespace PTCheckInTests.Steps
         [Then(@"首頁時鐘的簽退時間應該為現在的伺服器時間")]
         public async Task Then首頁時鐘的簽退時間應該為現在的伺服器時間()
         {
-            HttpResponseMessage response = await _httpClient.GetAsync("https://assistant.gss.com.tw/PTCheckinFront/login.aspx");
+            HttpResponseMessage response = await _httpClient.GetAsync(SeleniumBaseUrl);
             //Server時間
             DateTime now = DateTime.Parse(response.Headers.GetValues("Date").First());
             string hour = now.Hour < 10 ? "0" + now.Hour.ToString() : now.Hour.ToString();
@@ -127,7 +127,7 @@ namespace PTCheckInTests.Steps
         [Then(@"簽到時間應該為現在的伺服器時間")]
         public async Task Then簽到時間應該為現在的伺服器時間()
         {
-            HttpResponseMessage response = await _httpClient.GetAsync("https://assistant.gss.com.tw/PTCheckinFront/login.aspx");
+            HttpResponseMessage response = await _httpClient.GetAsync(SeleniumBaseUrl);
             //Server時間
             DateTime now = DateTime.Parse(response.Headers.GetValues("Date").First());
             string hour = now.Hour < 10 ? "0" + now.Hour.ToString() : now.Hour.ToString();
@@ -142,7 +142,7 @@ namespace PTCheckInTests.Steps
         [Then(@"簽退時間應該為現在的伺服器時間")]
         public async Task Then簽退時間應該為現在的伺服器時間()
         {
-            HttpResponseMessage response = await _httpClient.GetAsync("https://assistant.gss.com.tw/PTCheckinFront/login.aspx");
+            HttpResponseMessage response = await _httpClient.GetAsync(SeleniumBaseUrl);
             //Server時間
             DateTime now = DateTime.Parse(response.Headers.GetValues("Date").First());
             string hour = now.Hour < 10 ? "0" + now.Hour.ToString() : now.Hour.ToString();
@@ -293,6 +293,7 @@ namespace PTCheckInTests.Steps
             input.Clear();
             input.SendKeys(row["支援專案名稱"]);
         }
+
         [Then(@"關於我內的資料應該為")]
         public void Then關於我內的資料應該為(Table table)
         {
