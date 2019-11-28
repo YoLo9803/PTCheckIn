@@ -82,7 +82,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
  testRunner.When("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
@@ -94,7 +94,7 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("登入網站失敗")]
         [NUnit.Framework.TestCaseAttribute("輸入帳號不輸入密碼", "chris_fs_wang", "", null)]
-        [NUnit.Framework.TestCaseAttribute("輸入密碼不輸入帳號", "", "fffffff@8", null)]
+        [NUnit.Framework.TestCaseAttribute("輸入密碼不輸入帳號", "", "jenkins_test_pw", null)]
         [NUnit.Framework.TestCaseAttribute("輸入錯誤的密碼", "chris_fs_wang", "wrongPassword", null)]
         [NUnit.Framework.TestCaseAttribute("帳號密碼皆不輸入", "", "", null)]
         public virtual void 登入網站失敗(string scenarios, string userName, string password, string[] exampleTags)
@@ -130,7 +130,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 28
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 31
@@ -156,7 +156,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 37
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 38
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 39
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 40
@@ -182,7 +182,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 46
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 47
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 48
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 49
@@ -212,7 +212,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 57
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 58
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 59
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 60
@@ -242,7 +242,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 69
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 70
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 71
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 72
@@ -282,7 +282,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 85
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 86
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 87
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 88
@@ -329,7 +329,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 101
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 102
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 103
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 104
@@ -363,7 +363,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 124
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 125
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 126
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 127
@@ -392,7 +392,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 134
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 135
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 136
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 137
@@ -430,7 +430,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 149
  testRunner.And("輸入帳號 chris_fs_wang", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 150
- testRunner.And("輸入密碼 fffffff@8", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("輸入密碼 jenkins_test_pw", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 151
  testRunner.And("我按下登入按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 152

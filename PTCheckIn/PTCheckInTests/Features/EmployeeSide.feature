@@ -6,7 +6,7 @@
 Scenario: 登入網站成功
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	When 我按下登入按鈕
 	Then 首頁的用戶名稱應該為王方顯
 
@@ -19,14 +19,14 @@ Scenario Outline: 登入網站失敗
 	Examples: 
 		| scenarios       | userName      | password      |
 		| 輸入帳號不輸入密碼 | chris_fs_wang |               |
-		| 輸入密碼不輸入帳號 |               | fffffff@8     |
+		| 輸入密碼不輸入帳號 |               | jenkins_test_pw     |
 		| 輸入錯誤的密碼    | chris_fs_wang | wrongPassword |
 		| 帳號密碼皆不輸入  |                |              |
 
 Scenario: 快速簽到成功
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我點選快速簽到按鈕
 	Then 應該出現快速簽到成功視窗
@@ -35,7 +35,7 @@ Scenario: 快速簽到成功
 Scenario: 快速簽退成功
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我點選快速簽退按鈕
 	Then 應該出現快速簽退成功視窗
@@ -44,7 +44,7 @@ Scenario: 快速簽退成功
 Scenario: 快速簽到時間確認
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我點選快速簽到按鈕
 	And 我按下OK按鈕
@@ -55,7 +55,7 @@ Scenario: 快速簽到時間確認
 Scenario: 快速簽退時間確認
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我點選快速簽退按鈕
 	And 我按下OK按鈕
@@ -67,7 +67,7 @@ Scenario: 快速簽退時間確認
 Scenario: 手動簽到退成功(點選行事曆簽到連結)
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我按下名為行事曆簽到的連結
 	And 我點選這個月的簽到行事曆
@@ -83,7 +83,7 @@ Scenario: 手動簽到退成功(點選行事曆簽到連結)
 Scenario: 手動簽到退成功(點選GO按鈕)
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我按下馬上簽到GO按鈕
 	And 我點選這個月的簽到行事曆
@@ -99,7 +99,7 @@ Scenario: 手動簽到退成功(點選GO按鈕)
 Scenario Outline: 手動簽到錯誤
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我按下名為行事曆簽到的連結
 	And 我點選這個月的簽到行事曆
@@ -122,7 +122,7 @@ Scenario Outline: 手動簽到錯誤
 Scenario: 關於我頁面基本資料確認
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	When 我按下名為關於我的連結
 	Then 中文姓名應該為 王方顯
@@ -132,7 +132,7 @@ Scenario: 關於我頁面基本資料確認
 Scenario Outline: 編輯支援BU成功
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我按下名為關於我的連結
 	And 我填寫員工資料
@@ -147,7 +147,7 @@ Scenario Outline: 編輯支援BU成功
 Scenario Outline: 編輯支援BU資料確認
 	Given 我前往登入畫面
 	And 輸入帳號 chris_fs_wang
-	And 輸入密碼 fffffff@8
+	And 輸入密碼 jenkins_test_pw
 	And 我按下登入按鈕
 	And 我按下名為關於我的連結
 	And 我填寫員工資料
